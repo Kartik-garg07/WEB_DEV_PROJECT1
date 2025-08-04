@@ -1,0 +1,50 @@
+# E-Commerce Project
+
+This is a simple e-commerce web application built with Node.js, Express, MongoDB, and EJS.
+
+## Features
+
+- User login with session management
+- Product listing, search, and detail view
+- Add, update, and delete products (admin only)
+- Add to cart and view cart
+- Responsive and modern UI
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- MongoDB
+
+### Installation
+
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Start MongoDB on your local machine.
+4. Run `npm start` or `nodemon server.js` to start the server.
+5. Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Folder Structure
+
+```
+e-commerce/
+│
+├── public/              # Static files (CSS, images)
+├── src/
+│   ├── models/          # Mongoose models
+│   ├── routes/          # Express routers
+│   ├── views/           # EJS templates
+│   ├── db/              # Database connection
+│   └── app.js           # Express app setup
+├── server.js            # Entry point
+└── README.md
+```
+
+## Admin Access
+
+- To add, update, or delete products, login with:
+  - **Email:** Kartik@gmail.com  //imporatant point 
+
+- To get user interface and BUY NOW , ADD TO CART function:
+  - **Email:** Any email will work 
