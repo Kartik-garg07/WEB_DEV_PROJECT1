@@ -1,0 +1,104 @@
+/* body , html {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    flex-direction: column;
+}
+
+
+
+form{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+
+form>label {
+    display: block;
+    margin-top: 10px;
+}
+
+form > input{
+    padding: 5px 10px;
+} 
+form > button {
+    margin-top: 10px;
+} */
+ body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    min-width: 260px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #fda085;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+form > input[type="text"],
+form > input[type="number"],
+form > input[type="file"] {
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+form > input:focus {
+    border-color: #fda085;
+    outline: none;
+}
+
+form > button {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+    margin-top: 10px;
+}

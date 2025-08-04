@@ -1,0 +1,48 @@
+body , html {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    height: 80%;
+    width: 80%;
+    background-color: rgba(248, 219, 146, 0.742);
+    display: flex;
+    gap: 10px;
+    border: 10px solid #c93636;
+    border-radius: 18px;     
+}
+
+.card .left {
+    height: 100%;
+}
+
+.card .left img {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+button {
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+
+
+}
+
+button a {
+    text-decoration: none;
+    font-size: 2em;
+}

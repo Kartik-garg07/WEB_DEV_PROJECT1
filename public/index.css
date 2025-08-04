@@ -1,0 +1,110 @@
+body , html {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(29, 228, 246);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.container {
+    height:  100%;
+    width: 100%;
+    background-color: rgb(200, 205, 208);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.container .card {
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.card .top {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+.container .card img {
+    height: 100%;
+
+}
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(29, 228, 246);
+    position: relative;
+}
+
+.navbar-title {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.navbar-search input[type="text"] {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.navbar-search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #222;
+}
+
+.cart-link {
+    margin-left: 10px;
+    color: #222;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
