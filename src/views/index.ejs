@@ -20,7 +20,9 @@
             </a>
         </form>
     </nav>
-
+    <div id="cart-icon" onclick="window.location.href='/cart'">
+  🛒 <span id="cart-count">0</span>
+    </div>
         <% if (email === "Kartik@gmail.com") { %>
         <div style="width:100%; display:flex; justify-content:flex-end; margin: 18px 0;">
             <a href="/products" style="background: #1ecbe1; color: #fff; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; box-shadow: 0 2px 8px rgba(30,203,225,0.12); transition: background 0.2s;">

@@ -1,35 +1,4 @@
-/* body , html {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
 
-    flex-direction: column;
-}
-
-
-
-form{
-    border: 1px solid black;
-    padding: 15px;
-}
-
-
-form>label {
-    display: block;
-    margin-top: 10px;
-}
-
-form > input{
-    padding: 5px 10px;
-} 
-form > button {
-    margin-top: 10px;
-} */
  body, html {
     margin: 0;
     padding: 0;
@@ -91,7 +60,7 @@ form > input:focus {
 
 form > button {
     background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 8px;
     padding: 12px;

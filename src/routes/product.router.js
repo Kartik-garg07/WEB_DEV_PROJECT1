@@ -10,11 +10,8 @@ router.get("/", (req, res) => {
   res.render("productForm");
 });
 
-router.get("/:id", async (req, res) => {
-    const productId = req.params.id;
-    const product = await productModel.findById(productId);
-    const addedToCart = req.query.addedToCart === "true";
-    res.render("productDetail", { product, addedToCart, email: req.session.email });
+router.get("/add", (req, res) => {
+  res.render("productForm");
 });
 
 router.get("/update/:id", async(req, res)=>{
@@ -27,6 +24,25 @@ router.get("/update/:id", async(req, res)=>{
     res.render("updateForm",{product : product})
 })
 
+router.get("/delete/:id" , async (req,res)=>{
+    const productId = req.params.id
+
+    await productModel.findByIdAndDelete(productId)
+
+    res.redirect("/")
+})
+
+router.get("/cart", (req, res) => {
+  const cart = req.session.cart || [];
+  res.render("cart", { cart });
+});
+
+router.get("/:id", async (req, res) => {
+    const productId = req.params.id;
+    const product = await productModel.findById(productId);
+    const addedToCart = req.query.addedToCart === "true";
+    res.render("productDetail", { product, addedToCart, email: req.session.email });
+});
 
 router.post("/update/:id", upload.single("image"), async (req, res) => {
     try {
@@ -69,15 +85,6 @@ router.post("/update/:id", upload.single("image"), async (req, res) => {
         console.error(error);
         res.status(500).send("Something went wrong!");
     }
-})
-
-
-router.get("/delete/:id" , async (req,res)=>{
-    const productId = req.params.id
-
-    await productModel.findByIdAndDelete(productId)
-
-    res.redirect("/")
 })
 
 router.post("/add", upload.single("image"), async (req, res) => {
