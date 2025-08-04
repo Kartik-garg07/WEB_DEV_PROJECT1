@@ -5,6 +5,7 @@ const userRouter = require("./routes/user.router")
 const path = require("path")
 const mongoose = require("mongoose")
 const session = require("express-session")
+require("dotenv").config()
 
 const app = express()
 
